@@ -1,0 +1,1570 @@
+body, #section1 p {
+    margin: 0;
+    font-family: Tahoma;
+}
+
+header {
+    background: black;
+    margin: 0;
+    color: white;
+    padding: 7px;
+}
+
+header ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    padding: 4px 21px;
+    cursor: pointer;
+    position: relative;
+}
+
+header ul li:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: dodgerblue;
+    position: absolute;
+    bottom: -5px;
+    right: 16px;
+    transition: all .4s;
+}
+
+header ul li:hover:after {
+    width: 40px;
+}
+
+header ul li a {
+    width: 100%;
+    height: 100%;
+}
+
+#section1 {
+    background: #5734a0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 59px 8px;
+    -webkit-clip-path: ellipse(82% 100% at 50% 12%);
+}
+
+#section1 #bigStar {
+    animation-name: Star;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#section1 #smallStar {
+    margin-left: -79px;
+    animation-name: Star;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#section1 #ticket-l {
+    margin-left: -11px;
+    margin-top: 22px;
+    animation-name: ticket;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#section1 #Stars {
+    margin-left: 111px;
+    margin-top: 42px;
+    animation-name: ticket;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#section1 #ticket-r {
+    animation-name: Star;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    margin-top: -72px;
+    margin-left: 149px;
+    margin-bottom: 24px
+}
+
+@keyframes Star {
+    0% {
+        transform: translate3d(-4px, 4px, 4px);
+    }
+    60% {
+        transform: translate3d(29px, 22px, 24px);
+    }
+    100% {
+        transform: translate3d(-4px, 4px, 4px);
+    }
+}
+
+@keyframes ticket {
+    0% {
+        transform: translate3d(-4px, 4px, 4px);
+    }
+    60% {
+        transform: translate3d(29px, -24px, 24px);
+    }
+    100% {
+        transform: translate3d(-4px, 4px, 4px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(7deg);
+    }
+    49% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(7deg);
+    }
+}
+
+#section1 img {
+    display: block;
+    width: 120px;
+}
+
+#section1 div:first-child img {
+    display: block;
+    width: 120px;
+    margin-right: 160px;
+    margin-bottom: 34px;
+}
+
+#section1 div:last-child img {
+    display: block;
+    width: 120px;
+    margin-left: 260px;
+    margin-bottom: 140px;
+}
+
+#section1 #boltan {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#section1 #boltan #price {
+    font-size: 65px;
+    color: #ecae25;
+}
+
+#section1 #boltan #prize {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#section1 #boltan div {
+    width: 300px;
+    height: 120px;
+    background: #ecae25;
+    border-radius: 21px;
+    margin: auto;
+    margin-top: 29px;
+    position: relative;
+    box-shadow: 0 1px 4px black;
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#section1 #boltan div .circle {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #5734a0;
+    left: 75px;
+    top: -10px;
+}
+
+#section1 #boltan div #dotted {
+    position: absolute;
+    width: 98px;
+    height: 0;
+    left: 33px;
+    font-size: 20px;
+    top: 44px;
+    color: rgba(4, 4, 7, 0.36);
+    transform: rotate(
+            89deg);
+    border-top: 1px solid rgb(3 3 6 / 14%);
+    border-bottom: 1px solid rgb(3 3 6 / 14%);
+    padding: 4px;
+    padding-bottom: 32px;
+    padding-top: 0;
+}
+
+#section1 #boltan div button {
+    width: 85%;
+    height: 50px;
+    background: #5734a0;
+    margin-top: 35px;
+    border-radius: 17px;
+    border: none;
+    z-index: 9;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    transition: all .3s;
+}
+
+#section1 #boltan div button:hover {
+    background: #5734a0ab;
+}
+
+#section1 #boltan div button a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 47px;
+}
+
+#section2 {
+    background: #6A39CC;
+    text-align: center;
+    padding: 70px 20px;
+    margin-top: -47px;
+    padding-bottom: 120px;
+}
+
+#section2 h2 {
+    color: white;
+    font-size: 47px;
+}
+
+#section2 > p {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#section2 > p span {
+    color: #ecae25;
+    font-size: 42px;
+}
+
+#section2 #ticketBox {
+    background: white;
+    width: 912px;
+    margin: auto;
+    border-radius: 42px;
+    overflow: hidden;
+    margin-top: 76px;
+    position: relative;
+}
+
+#section2 #ticketBox #ticketHeader {
+    display: flex;
+    justify-content: space-between;
+    background: #EFEEF3;
+    padding: 0 16px;
+}
+
+#section2 #ticketBox #ticketHeader p:first-child {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#section2 #ticketBox #ticketHeader p:nth-child(2) {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 47px;
+}
+
+#section2 #ticketBox #ticketContent {
+    background: white;
+    padding: 12px 13px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#section2 #ticketBox #ticketContent table {
+    width: 60%;
+}
+
+#section2 #ticketBox #ticketContent table tr {
+    height: 89px;
+}
+
+#section2 #ticketBox #ticketContent table tr td:first-child {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+}
+
+#section2 #ticketBox #ticketContent table tr:first-child td:nth-child(2) {
+    color: #7645D9;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: left;
+}
+
+#section2 #ticketBox #ticketContent table tr:first-child td:nth-child(2) b {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#section2 #ticketBox #ticketContent table tr:nth-child(2) td:nth-child(2) a,
+#section3 div a,
+#yourHistoryContent a,
+#buyTicketModalContent form input[type='submit'],
+footer #footerBottom #footerBottomRight a{
+    border-radius: 15px;
+    background: #46b6be;
+    color: white;
+    padding: 6px 14px;
+    width: 114px;
+    height: 37px;
+    display: block;
+    line-height: 36px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+#section2 #ticketBox #ticketContent table tr:nth-child(2) td:nth-child(2) a:hover,
+#section3 div a:hover, #yourHistoryContent a:hover,
+#buyTicketModalContent form input[type='submit']:hover,
+footer #footerBottom #footerBottomRight a:hover{
+    background: #62eaf4;
+}
+
+#section2 #ticketBox #ticketFooter {
+    background: #FAF9FA;
+    padding: 0 16px;
+    height: 65px;
+    transition: height .4s ease-out;
+}
+
+#section2 #ticketBox #ticketFooter.open {
+    height: 399px;
+}
+
+#section2 #ticketBox #ticketFooter > p {
+    margin: 0;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #280D5F;
+}
+
+#section2 #ticketBox #ticketFooter table {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 62px;
+}
+
+#section2 #ticketBox #ticketFooter table tr {
+    margin-bottom: 9px;
+}
+
+#section2 #ticketBox #ticketFooter table tr td {
+    line-height: 11px;
+    padding-bottom: 30px;
+}
+
+#section2 #ticketBox #ticketFooter table tr td p:first-child {
+    color: #7645D9;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#section2 #ticketBox #ticketFooter table tr td p:nth-child(2) {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#section2 #ticketBox #ticketFooter table tr:nth-child(2) td:last-child p:first-child {
+    color: #EF6EB0;
+}
+
+#section2 #ticketBox #ticketFooter table tr td small {
+    color: #7A6EAA;
+    font-weight: bold;
+}
+
+#section2 #ticketBox #acardeonBtn, #allHistoryBtn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: white;
+    color: #4db7bf;
+    padding: 0 11px;
+    transition: all .3s;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#section2 #ticketBox #acardeonBtn:hover, #allHistoryBtn:hover {
+    color: #62eaf4;
+}
+
+#section2 #ticketBox #acardeonBtn div, #allHistoryBtn div {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#section2 #ticketBox #acardeonBtn div #hide, #allHistoryBtn div #hide2 {
+    display: none;
+}
+
+#section2 #ticketBox #acardeonBtn #arrow, #allHistoryBtn #arrow2 {
+    transform: rotate(-89deg) translate(-1px, 31px);
+    font-size: 15px;
+}
+
+#section3 {
+    background: #34395A;
+    display: flex;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    padding: 90px 4px;
+}
+
+#section3 img {
+    height: 129px;
+    margin-top: 35px;
+}
+
+#section3 div p {
+    font-size: 25px;
+}
+
+#section4 {
+    background: #B9C3E3;
+    padding: 90px 8px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 97%, 0% 100%);
+}
+
+#section4 h2 {
+    margin: 0;
+    font-size: 40px;
+    color: #280D5F;
+    text-align: center;
+}
+
+#section4 #history {
+    display: flex;
+    background: #EEEAF4;
+    width: 274px;
+    height: 36px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 29px;
+}
+
+#section4 #history p {
+    text-align: center;
+    width: 50%;
+    color: #807998;
+    background: #EEEAF4;
+    height: 100%;
+    border-radius: 20px;
+    line-height: 37px;
+    margin: auto;
+    cursor: pointer;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+#section4 #history p:hover {
+    color: #A299C3;
+}
+
+#section4 #history p.active {
+    background: #807998;
+    color: #EEEAF4;
+}
+
+#section4 #history p.active:hover {
+    background: #A299C3;
+}
+
+#section4 #allHistory {
+    background: white;
+    width: 861px;
+    margin: auto;
+    border-radius: 42px;
+    overflow: hidden;
+    margin-top: 37px;
+    position: relative;
+    color: #280D5F;
+}
+
+#section4 #allHistory #allHistoryHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 40px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 11px;
+}
+
+#section4 #allHistory #allHistoryHeader #allHistoryHeaderLeft span:first-child,
+#section4 #allHistory #allHistoryContent p {
+    color: #280D5F;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#section4 #allHistory #allHistoryHeader #allHistoryHeaderLeft #roundNum {
+    color: #280D5F;
+    background: #D7CAEC;
+    border-radius: 20px;
+    padding: 7px 18px;
+    border: 1px solid gray;
+}
+
+#section4 #allHistory #allHistoryHeader #allHistoryHeaderLeft p {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+#section4 #allHistory #allHistoryHeader #allHistoryHeaderRight img {
+    cursor: pointer;
+}
+
+#section4 #allHistory #allHistoryContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 40px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid lightgrey;
+}
+
+#section4 #allHistory #allHistoryContent #latestLabel {
+    position: absolute;
+    background: #7645D9;
+    color: white;
+    padding: 7px 61px;
+    font-weight: bold;
+    right: -45px;
+    transform: rotate(45deg);
+}
+
+#section4 #allHistory #allHistoryContent #numbers {
+    display: flex;
+    margin-right: 33px;
+}
+
+#section4 #allHistory #allHistoryContent #numbers div {
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+#section4 #allHistory #allHistoryContent #numbers p {
+    position: absolute;
+    top: -24px;
+    right: 39%;
+    font-size: 38px;
+    color: black;
+    text-shadow: 3px 2px 2px white;
+}
+
+#section4 #allHistory #allHistoryContent #numbers img {
+    width: 100%;
+    height: 100%;
+}
+
+#section4 #allHistory #allHistoryFooter {
+    background: #FAF9FA;
+    display: flex;
+    padding: 26px 40px;
+    height: 13px;
+    transition: all .4s;
+}
+
+#section4 #allHistory #allHistoryFooter.open {
+    height: 315px;
+}
+
+#section4 #allHistory #allHistoryFooterLeft p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#section4 #allHistory #allHistoryFooterLeft p:nth-child(2) {
+    font-weight: bold;
+    font-size: 33px;
+    text-align: left;
+    color: #7645D9;
+    margin: 0;
+}
+
+#section4 #allHistory #allHistoryFooterLeft p:nth-child(3) {
+    color: #280D5F;
+    font-weight: bold;
+    margin: 0;
+}
+
+#section4 #allHistory #allHistoryFooterLeft small {
+    color: #7A6EAA;
+    font-weight: bold;
+}
+
+#section4 #allHistory #allHistoryFooterRight {
+    margin-left: 25px;
+}
+
+#section4 #allHistory #allHistoryFooterRight > p {
+    margin-bottom: 28px;
+    margin-top: 5px;
+}
+
+#section4 #allHistory #allHistoryFooterRight p {
+    font-weight: bold;
+    color: #280D5F;
+    margin: 0;
+}
+
+#section4 #allHistory #allHistoryFooterRight table tr td {
+    padding-bottom: 29px;
+    padding-left: 5px;
+}
+
+#section4 #allHistory #allHistoryFooterRight table tr td:first-child {
+    padding-left: 0;
+}
+
+#section4 #allHistory #allHistoryFooterRight table tr td p:first-child {
+    color: #7645D9;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#section4 #allHistory #allHistoryFooterRight table tr td p:nth-child(2) {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#section4 #allHistory #allHistoryFooterRight table tr td small {
+    color: #7A6EAA;
+    font-weight: bold;
+}
+
+#section4 #allHistory #allHistoryFooterRight table tr:last-child td:last-child {
+    padding-bottom: 51px;
+}
+
+#section4 #allHistory #allHistoryFooterRight table tr:last-child td:last-child p:first-child {
+    color: #EF6EB0;
+    font-weight: bold;
+}
+
+#section4 #yourHistory {
+    background: white;
+    width: 861px;
+    margin: auto;
+    border-radius: 42px;
+    overflow: hidden;
+    margin-top: 37px;
+    position: relative;
+    color: #280D5F;
+    display: none;
+}
+
+#section4 #yourHistory #yourHistoryHeader {
+    background: #F0EDF3;
+}
+
+#section4 #yourHistory p {
+    color: #280D5F;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 26px 40px;
+    margin: 0;
+}
+
+#section4 #yourHistory #yourHistoryContent {
+    padding-top: 54px;
+    padding-bottom: 84px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#section4 #yourHistory #yourHistoryContent p {
+    color: #7A6EAA;
+    font-size: 17px;
+    text-align: center;
+}
+
+#section4 #yourHistory #yourHistoryFooter {
+    text-align: center;
+}
+
+#section4 #yourHistory #yourHistoryFooter p {
+    color: #7A6EAA;
+    font-size: 14px;
+}
+
+#buyTicketModal {
+    color: #7A6EAA;
+    font-size: 14px;
+    width: 349px;
+    height: 558px;
+    position: fixed;
+    top: 158px;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background: white;
+    margin: auto;
+    border-radius: 27px;
+    overflow: hidden;
+    display: none;
+}
+
+#buyTicketModalHeader {
+    background: #EFEEF3;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+#buyTicketModalHeader p {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    line-height: 41px;
+}
+
+#buyTicketModalHeader #close {
+    height: 21px;
+    margin-right: 34px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+#buyTicketModalContent {
+    padding: 14px;
+}
+
+#buyTicketModalContent #title {
+    display: flex;
+}
+
+#buyTicketModalContent #title img {
+    width: 33px;
+    height: 31px;
+    margin-top: 14px;
+    transform: rotate(349deg);
+}
+
+#buyTicketModalContent #title p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#buyTicketModalContent #title p:first-child {
+    margin-right: auto;
+}
+
+#buyTicketModalContent #title p:nth-child(2) {
+    color: #280D5F;
+}
+
+#buyTicketModalContent form {
+    position: relative;
+}
+
+#buyTicketModalContent form input {
+    background: #EFEEF3;
+    border: 1px solid lightgrey;
+    width: 94%;
+    height: 96px;
+    margin: auto;
+    text-align: right;
+    border-radius: 20px;
+    display: block;
+    padding-right: 13px;
+    color: #7A6EAA;
+    font-size: 18px;
+}
+
+#buyTicketModalContent form input::placeholder {
+    font-size: 18px;
+    color: #7A6EAA;
+}
+
+#buyTicketModalContent form label {
+    position: absolute;
+    right: 13px;
+    top: 67px;
+    font-size: 13px;
+}
+
+#buyTicketModalContent form table {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding-left: 4px;
+    margin-top: 22px;
+    line-height: 32px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgrey;
+}
+
+#buyTicketModalContent form table tr td:last-child {
+    text-align: right;
+}
+
+#buyTicketModalContent form span {
+    color: #280D5F;
+    font-weight: bold;
+}
+
+#buyTicketModalContent form #pay {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 16px;
+}
+
+#buyTicketModalContent form #pay p:last-child {
+    color: #280D5F;
+}
+
+#buyTicketModalContent form input[type='submit'] {
+    width: 317px;
+    height: 50px;
+    text-align: center;
+    font-size: 19px;
+}
+
+#buyTicketModalFooter {
+    padding: 14px 9px;
+}
+
+#dark {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: #00000042;
+    display: none;
+}
+
+#section5 {
+    background: #FAF9FA;
+    padding-top: 80px;
+    margin-top: -70px;
+}
+
+#section5 h1 {
+    color: #7645D9;
+    text-align: center;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+#section5 > p {
+    color: #624E8A;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+#section5 #steps {
+    width: 80%;
+    margin-top: 58px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#section5 #steps .step {
+    width: 24%;
+    background: #FFFFFF;
+    border-radius: 22px;
+    box-shadow: 2px 2px 2px lightgray;
+    padding: 20px;
+    margin: 17px;
+    border: 1px solid lightgrey;
+}
+
+#section5 #steps .step p:first-child {
+    color: #280D5F;
+    text-align: right;
+}
+
+#section5 #steps .step h2 {
+    color: #7645D9;
+}
+
+#section5 #steps .step .stepDes {
+    color: #7A6EAA;
+}
+
+#section5 hr {
+    width: 69%;
+    height: 1px;
+    margin-top: 20px;
+    background: lightgray;
+    border: none;
+}
+
+#section5 #winningCriteria {
+    width: 71%;
+    margin-top: 58px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#section5 #winningCriteria h2 {
+    color: #7645D9;
+}
+
+#section5 #winningCriteria #winningCriteriaLeft {
+    padding-left: 2%;
+}
+
+#section5 #winningCriteria #winningCriteriaLeft p, #winningCriteriaLeft ul {
+    color: #7A6EAA;
+    line-height: 20px;
+}
+
+#section5 #winningCriteria #winningCriteriaLeft #firstP {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight {
+    padding-right: 38px;
+}
+#section5 #winningCriteria #winningCriteriaRight .numbers {
+    position: relative;
+    width: 35px;
+    margin-left: 10px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight .table {
+    width: 323px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    box-shadow: 2px 2px 2px lightgrey;
+    padding: 20px;
+    margin: 17px;
+    border: 1px solid lightgrey;
+    padding-bottom: 42px;
+    padding-right: 2px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight .table > div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+#section5 #winningCriteria #winningCriteriaRight .numbers img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+#section5 #winningCriteria #winningCriteriaRight .numbers p {
+    position: absolute;
+    margin: 0;
+    top: 7px;
+    right: 39%;
+    text-shadow: 1px 1px 0 white;
+    font-weight: bold;
+}
+
+#section5 #winningCriteria #winningCriteriaRight .tik {
+    border: 2px solid #57D9BA;
+    border-radius: 50%;
+    width: 9px;
+    display: block;
+    margin-left: 32px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight .close {
+    width: 12px;
+    display: block;
+    margin-left: 32px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight p {
+    text-align: center;
+    margin: 0;
+}
+
+#section5 #winningCriteria #winningCriteriaRight .status {
+    display: flex;
+    margin-left: 17px;
+    margin-top: 17px;
+    margin-bottom: 12px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight #number {
+    margin-top: 11px;
+    color: darkgray;
+    margin-bottom: 32px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight #number .gradientBorder {
+    display: inline;
+    background: -webkit-linear-gradient(left, #FFC812, #EFD70D, #6DD279, #2ECEB2);
+    border-radius: 21px;
+    padding: 3px;
+    margin-left: 1px;
+    margin-right: -6px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight #number .gradientBorder div {
+    display: inline;
+    background: white;
+    height: 98%;
+    border-radius: 21px;
+    padding-right: 16px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight #number .gradientBorder span {
+    color: black;
+    margin-left: 25px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight #number > span:first-child,
+#section5 #winningCriteria #winningCriteriaRight #number2 > span:first-child {
+    color: #7645D9;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: -9px;
+}
+
+#section5 #winningCriteria #winningCriteriaRight #number span {
+    margin-left: 22px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#section5 #winningCriteria #winningCriteriaRight #number2 div {
+    display: inline;
+    background: #FAF9FA;
+    border-radius: 29px;
+    margin-left: 1px;
+    padding: 8px;
+    border: 1px solid lightgray;
+}
+
+#section5 #winningCriteria #winningCriteriaRight #number2 div span {
+    margin: 14px;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#section5 #pieChart {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+#section5 #pieChart #pieChartLeft h2 {
+    color: #7645D9;
+}
+
+#section5 #pieChart #pieChartLeft h3 {
+    color: #280D5F;
+}
+
+#section5 #pieChart #pieChartLeft p, #section5 #pieChart #pieChartLeft ul {
+    color: #7A6EAA;
+    font-weight: bold;
+}
+
+#section5 #pieChart #pieChartRight #pieChartBox {
+    width: 356px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    box-shadow: 2px 2px 2px lightgrey;
+    padding: 20px;
+    margin: 17px;
+    border: 1px solid lightgrey;
+}
+
+#my-pie-chart-container {
+
+}
+
+#my-pie-chart {
+    background: conic-gradient(#BDC2C4 4%, #FFD307 1% 6.55%, #8FD74F 1.55% 18.08%, #10AC87 6.08% 27.68%, #3AF3F8 8.68% 35.27%, #A881FC 24.27% 47.47%, #D750AE 33.47%);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+#chartTitle {
+    display: flex;
+    color: #7645D9;
+    font-weight: bold;
+    justify-content: space-between;
+}
+#chartTitle p{
+   margin: 0;
+}
+
+#legenda {
+    background-color: white;
+    padding: 5px;
+}
+
+.entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;;
+}
+
+.entry-color {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.entry-text {
+    margin-left: 5px;
+    color: #7A6EAA;
+    font-weight: bold;
+    margin-right: auto;
+}
+.entry p {
+    color: #280D5F;
+    font-weight: bold;
+}
+
+#color-red {
+    background-color: #D750B2;
+}
+
+#color-orange {
+    background-color: #3AF3F8;
+}
+
+#color-yellow {
+    background-color: #FFD307;
+}
+
+#color-green {
+    background-color: #8FD74F;
+}
+
+#color-blue {
+    background-color: #10AC87;
+}
+
+#color-black {
+    background-color: #BDC2C4;
+}
+
+#color-brown {
+    background-color: #A881FC;
+}
+#question {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+#question div{
+   margin-top: 40px;
+}
+#question img{
+    width: 260px;
+    margin-right: 40px;
+}
+#question div p:first-child {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 22px;
+}
+#question div p:nth-child(2) {
+    color: #280D5F;
+    font-weight: bold;
+    font-size: 16px;
+}
+footer {
+    background: #27262C;
+    color: white;
+    padding: 70px 20px;
+    padding-bottom: 12px;
+}
+footer #FooterMenu {
+   display: flex;
+    justify-content: space-around;
+}
+footer #FooterMenu > div:first-child ul li:last-child {
+   color: #FFB237;
+}
+footer #FooterMenu > div:first-child ul li:last-child:hover {
+   color: #cc8f2d;
+}
+footer #FooterMenu ul {
+   list-style-type: none;
+    line-height: 40px;
+}
+footer #FooterMenu ul li{
+   cursor: pointer;
+    transition: all .4s;
+}
+footer #FooterMenu ul li:hover{
+   color: gray;
+}
+footer #FooterMenu ul li:first-child {
+   color: #9A6AFF;
+    font-weight: bold;
+}
+footer #FooterMenu ul li:first-child:hover {
+  cursor: default;
+    color: #9A6AFF;
+}
+footer #FooterMenu > div:last-child {
+   padding-right: 48px;
+}
+footer #FooterMenu > div:last-child p {
+   line-height: 22px;
+    user-select: none;
+    display: inline;
+    font-size: 22px;
+    font-weight: bold;
+}
+footer #FooterMenu > div:last-child img {
+   margin-top: 11px;
+    margin-bottom: -9px;
+}
+footer #FooterMenu #socials {
+margin-top: 44px;
+    margin-left: 33px;
+}
+footer #FooterMenu #socials a {
+   cursor: pointer;
+}
+footer hr {
+   width: 83%;
+    height: 1px;
+    background: grey;
+    border: none;
+    margin-top: 54px;
+}
+footer input {
+   width: 170px;
+    height: 36px;
+}
+footer #changeTheme {
+   width: 84px;
+    height: 41px;
+    background: #857E98;
+    border-radius: 44px;
+    position: relative;
+    margin-right: 20px;
+}
+footer #changeTheme #day {
+  position: absolute;
+    height: 41px;
+    width: 40px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    cursor: pointer;
+}
+footer #changeTheme #day:hover {
+    border: 4px solid rebeccapurple;
+    height: 34px;
+    width: 34px;
+}
+footer #changeTheme #night {
+    position: absolute;
+    height: 33px;
+    width: 36px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: 1px;
+    background: black;
+    padding: 4px;
+    display: none;
+    z-index: 4;
+    cursor: pointer;
+}
+footer #changeTheme #night:hover {
+    border: 4px solid rebeccapurple;
+    height: 29px;
+    width: 32px;
+    top: -2px;
+    right: 0;
+}
+footer #changeTheme #dayBackground {
+    position: absolute;
+    height: 31px;
+    width: 31px;
+    border-radius: 50%;
+    top: 5px;
+    bottom: 0;
+    left: 5px;
+    filter: opacity(0.5);
+}
+footer #nightBackground{
+    position: absolute;
+    height: 41px;
+    width: 44px;
+    border-radius: 50%;
+    top: -2px;
+    bottom: 0;
+    right: -3px;
+    padding: 2px;
+    filter: opacity(0.5);
+}
+footer #footerBottom{
+    display: flex;
+    justify-content: space-around;
+    padding: 31px 137px;
+}
+footer #footerBottom #selectLanguage{
+    display: flex;
+    cursor: pointer;
+    margin-right: auto;
+}
+footer #footerBottom #selectLanguage img{
+    width: 44px;
+    height: 46px;
+}
+footer #footerBottom #selectLanguage span{
+    margin-top: 14px;
+    color: #857E98;
+    font-weight: bold;
+    margin-left: 7px;
+}
+footer #footerBottom #selectLanguage #languages{
+    background: white;
+    color: #280D5F;
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    overflow-y: scroll;
+    margin-top: -399px;
+    margin-left: -76px;
+    display: none;
+}
+footer #footerBottom #selectLanguage #languages.active{
+    display: block;
+}
+footer #footerBottom #selectLanguage #languages p{
+    transition: all .4s;
+}
+footer #footerBottom #selectLanguage #languages p:hover{
+    color: #4b239c9e;
+}
+footer #footerBottom #footerBottomRight{
+    display: flex;
+}
+footer #footerBottom #footerBottomRight p{
+    color: #857E98;
+    font-weight: bold;
+    font-size: 19px;
+    margin-right: 32px;
+}
+footer #footerBottom #footerBottomRight img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .2s;
+}
+footer #footerBottom #footerBottomRight a{
+    width: 110px;
+    height: 26px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+footer #footerBottom #footerBottomRight img:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 992px) {
+    #section5 #steps {
+        display: block;
+    }
+
+    #section5 #steps .step {
+        display: block;
+        width: 90%;
+    }
+
+    #section5 #winningCriteria {
+        display: block;
+    }
+
+    #section5 #winningCriteria #winningCriteriaRight .table {
+        margin: auto;
+    }
+
+    #section5 #winningCriteria #winningCriteriaRight{
+        padding: 0;
+}
+    #section5 #pieChart {
+        display: block;
+    }
+    #section5 #pieChart #pieChartRight #pieChartBox {
+        margin: auto;
+    }
+    #section2 #ticketBox {
+        width: 669px;
+    }
+    #section4 #allHistory {
+        width: 667px;
+    }
+    #section4 #yourHistory {
+        width: 667px;
+    }
+    #section4 #allHistory #allHistoryFooter.open {
+        height: 476px;
+    }
+    #section4 #allHistory #allHistoryContent #numbers {
+        margin: 0;
+    }
+    #section4 #allHistory #allHistoryContent #numbers div {
+        width: 69px;
+    }
+    #section1 div:first-child img {
+        margin-right: 27px;
+    }
+    #section1 #ticket-r {
+        margin-left: 33px;
+    }
+    #section1 #Stars {
+        margin-left: 44px;
+    }
+    footer #footerBottom #selectLanguage{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #section1 #Stars,#section1 #ticket-r,#section1 #smallStar,
+    #section1 #bigStar,#section1 #ticket-l  {
+        display: none;
+    }
+    #section2 #ticketBox {
+        width: 394px;
+    }
+    #section2 #ticketBox #ticketHeader p:first-child {
+        font-size: 17px;
+    }
+    #section2 #ticketBox #ticketHeader p:nth-child(2) {
+        font-size: 12px;
+        line-height: 36px;
+    }
+    #section2 #ticketBox #ticketContent table tr td:first-child {
+        font-size: 18px;
+    }
+    #section2 #ticketBox #ticketContent table tr:first-child td:nth-child(2) {
+        font-size: 20px;
+    }
+    #section2 #ticketBox #ticketContent table {
+        width: 100%;
+    }
+    #section2 #ticketBox #ticketFooter table tr td p:first-child,
+    #section2 #ticketBox #ticketFooter table tr td p:nth-child(2),
+    #section4 #allHistory #allHistoryFooterRight table tr td p:first-child,
+    #section4 #allHistory #allHistoryFooterRight table tr td p:nth-child(2),
+    #question div p:nth-child(2){
+        font-size: 12px;
+    }
+    #section2 #ticketBox #ticketFooter.open {
+        height: 351px;
+    }
+    #section4 #allHistory {
+        width: 425px;
+    }
+    #section4 #allHistory #allHistoryHeader {
+        padding: 26px 24px;
+    }
+    #section4 #allHistory #allHistoryContent #numbers div {
+        width: 38px;
+        height: 43px;
+    }
+    #section4 #allHistory #allHistoryContent #numbers p {
+        right: 29%;
+        font-size: 28px;
+    }
+    #section4 #allHistory #allHistoryContent #numbers {
+        margin-top: 35px;
+    }
+    #section4 #allHistory #allHistoryContent p {
+        font-size: 18px;
+    }
+    #section4 #allHistory #allHistoryFooterLeft p:first-child {
+        font-size: 19px;
+    }
+    #section4 #allHistory #allHistoryFooterLeft p:nth-child(2) {
+        font-size: 21px;
+    }
+    #section4 #allHistory #allHistoryFooter {
+        padding: 20px 5px;
+        flex-wrap: wrap;
+    }
+    #section4 #allHistory #allHistoryFooter.open {
+        height: 571px;
+    }
+    #allHistoryFooterLeft {
+        padding-left: 27px;
+    }
+    #allHistoryFooterLeft p {
+        margin-top: -41px;
+    }
+    #section4 #yourHistory {
+        width: 354px;
+    }
+    #question div p:first-child {
+        font-size: 19px;
+    }
+    #question img {
+        width: 163px;
+    }
+    footer #FooterMenu,footer #footerBottom {
+        flex-wrap: wrap;
+    }
+    footer #FooterMenu #socials {
+        margin-bottom: 47px;
+    }
+    footer #footerBottom #selectLanguage #languages {
+        margin-top: -414px;
+        position: absolute;
+    }
+    footer #footerBottom #footerBottomRight {
+        margin-top: 38px;
+    }
+}
